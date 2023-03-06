@@ -183,7 +183,7 @@ var HCaptcha = /*#__PURE__*/function (_React$Component) {
       isRemoved: false,
       captchaId: captchaId
     }, function () {
-      onReady && onReady(captchaId);
+      onReady && onReady();
     });
   };
 
@@ -223,7 +223,7 @@ var HCaptcha = /*#__PURE__*/function (_React$Component) {
       _this3.renderCaptcha(function () {
         // trigger onLoad if it exists
         var onLoad = _this3.props.onLoad;
-        if (onLoad) onLoad();
+        if (onLoad) onLoad(_this3.state);
       });
     });
   };
