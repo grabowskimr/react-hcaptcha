@@ -261,7 +261,7 @@ var HCaptcha = /*#__PURE__*/function (_React$Component) {
         _this3.renderCaptcha(function () {
           // trigger onLoad if it exists
           var onLoad = _this3.props.onLoad;
-          if (onLoad) onLoad(_this3.state);
+          if (onLoad) onLoad(_this3.state.captchaId);
         });
       });
     }

@@ -20,7 +20,7 @@ interface HCaptchaProps {
   onChalExpired?: () => any;
   onError?: (event: string) => any;
   onVerify?: (token: string, ekey: string) => any;
-  onLoad?: () => any;
+  onLoad?: (captchaId: string) => void;
   languageOverride?: string;
   sitekey: string;
   size?: "normal" | "compact" | "invisible";

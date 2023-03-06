@@ -214,7 +214,7 @@ class HCaptcha extends React.Component {
         this.renderCaptcha(() => {
             // trigger onLoad if it exists
             const { onLoad } = this.props;
-            if (onLoad) onLoad(this.state);
+            if (onLoad) onLoad(this.state.captchaId);
         });
       });
     }
