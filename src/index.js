@@ -180,7 +180,7 @@ class HCaptcha extends React.Component {
       const captchaId = hcaptcha.render(this.ref.current, renderParams);
 
       this.setState({ isRemoved: false, captchaId }, () => {
-        onReady && onReady();
+        onReady && onReady(captchaId);
       });
     }
 

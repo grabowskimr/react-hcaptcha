@@ -183,7 +183,7 @@ var HCaptcha = /*#__PURE__*/function (_React$Component) {
       isRemoved: false,
       captchaId: captchaId
     }, function () {
-      onReady && onReady();
+      onReady && onReady(captchaId);
     });
   };
 
