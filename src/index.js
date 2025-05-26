@@ -68,8 +68,8 @@ class HCaptcha extends React.Component {
         isApiReady,
         isRemoved: false,
         elementId: props.id,
-        captchaId: ''
-      }
+        captchaId: props.captchaId || ''
+      };
     }
 
     componentDidMount () { // Once captcha is mounted intialize hCaptcha - hCaptcha

@@ -99,7 +99,7 @@ var HCaptcha = /*#__PURE__*/function (_React$Component) {
       isApiReady: isApiReady,
       isRemoved: false,
       elementId: props.id,
-      captchaId: ''
+      captchaId: props.captchaId || ''
     };
     return _this;
   }
